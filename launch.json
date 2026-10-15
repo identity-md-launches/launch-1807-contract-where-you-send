@@ -1,0 +1,10 @@
+{
+  "kind": "evm_contracts",
+  "contracts": [
+    {
+      "contract": "EthRefund",
+      "constructorArgs": []
+    }
+  ],
+  "notes": "EthRefund requires no constructor arguments, owner, dependencies, deployment funding, or initialization. Positive ETH payments through receive, fallback, or refund() return exactly msg.value to the immediate sender in the same transaction. Zero-value calls and failed refunds revert; reentrant calls are rejected. Contract callers must accept ETH refunds. There are no fees; transaction gas is not refunded. Pre-existing ETH balances are not distributed."
+}
